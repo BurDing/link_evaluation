@@ -1,10 +1,10 @@
 # link_evaluation	
 To calculate the relevance between a web link and a given topic.
 
-get_feature(links, topic, relevant_urls)
+## get_feature(links, topic, relevant_urls)
 To parse the web link and the text that owns the hyperlink to 10 numerical features, which are the edit distance and 2,3,4,5,6,7-gram appearance rate of web link and given relevant links, tf value, word similarity and word synonym of the text that owns the hyperlink and topic. 
 
-parameters: 	links: dictionary
+### parameters: 	links: dictionary
 			The key is the web link.
 			The value is the text that owns the hyperlink.
 		topic: string
@@ -12,7 +12,7 @@ parameters: 	links: dictionary
 		relevant_urls: list of tuples
 			The first element of tuple is the web link.
 The second element of tuple is the relevance score between this web link and the given topic
-return:		output: dictionary
+### return:		output: dictionary
 			The key is the web link.
 			The value are the numerical features.
 
